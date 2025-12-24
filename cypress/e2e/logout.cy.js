@@ -25,6 +25,7 @@
 //     // })
 
 // })
+
 describe('Logout functionality test', () => {
 
   beforeEach(() => {
@@ -45,5 +46,4 @@ describe('Logout functionality test', () => {
     cy.get('a[href="/logout"]').should('be.visible').click()
     cy.url().should('include', '/login')
   })
-
 })
