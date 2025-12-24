@@ -68,5 +68,4 @@ it('To test the conformation page',  ()=> {
 
   
 })
-
-cy.get('localost')
+this is kamal thapa cypruss 
