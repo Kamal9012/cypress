@@ -68,3 +68,5 @@ it('To test the conformation page',  ()=> {
 
   
 })
+
+cy.get('localost')
