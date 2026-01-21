@@ -35,7 +35,13 @@ describe('Testing the homepage feature ', ()=>{
         cy.get("div[class='product-information'] h2").should('be.visible')
         cy.get("body > section:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > p:nth-child(3)")
          // cy.contains('Cotton Silk Hand Block Print Saree Top').should('be.visible')
-             
+         cy.get("button[type='button']").should("be.visible").click()
+         cy.get(".modal-content").should("be.visible")
+         cy.get(".btn.btn-success.close-modal.btn-block").should("be.visible").click()
+        cy.get('#name').type("Elish acharya")
+        cy.get('#email').should('be.visible').type('rajeshdai@gmail.com')
+        cy.get('#review').should('be.visible').type("testing this web ")
+        cy.get('#button-review').should('be.visible').click()
          })
 
 

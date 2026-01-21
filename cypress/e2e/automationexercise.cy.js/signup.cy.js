@@ -23,6 +23,7 @@ beforeEach(() =>{
   cy.url().should('include','/signup')
 
   // handling the checkbox  between gender
+  
   cy.get('input[name="title"]').check('Mr')
 
   cy.get('input[value="Mr"]').should('be.checked')
